@@ -1,12 +1,12 @@
 ##Assignment 3##
 
-command executed after retriving the file into my cs2 account
+command executed after retriving the zip file into my cs2 account
 
 ```
 ogr2ogr -f "MySQL" MySQL:"akalaru,host=localhost,user=akalaru,password=akhima97971,port=3036" TM_WORLD_BORDERS-0.3.shp -nln World_Borders -update -overwrite -lco engine=MYISAM
 ```
 
-Table sctructre created aafter executing the command
+Table structure created after executing the command
 
 ```SQL
 CREATE TABLE IF NOT EXISTS `world_borders` (
