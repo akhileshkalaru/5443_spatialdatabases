@@ -1,0 +1,32 @@
+DEFINATIONS
+
+(1)	SHP FILE:-
+Shapefile is a popular geospatial vector data format for geographic information system software. It is developed and regulated by Esri as a (mostly) open specification for data interoperability among Esri and other GIS software products.  Shapefiles spatially describe vector features: points, lines, and polygons.
+(2)	OSM FILE:-
+This driver reads OpenStreetMap files, in .osm (XML based) and .pbf (optimized binary) formats. The driver is available if GDAL is built with SQLite support and, for .osm XML files, with Expat support. The filenames must end with .osm or .pbf extension.	
+The driver will categorize features into 5 layers :
+•	points : "node" features that have significant tags attached.
+•	lines : "way" features that are recognized as non-area.
+•	multilinestrings : "relation" features that form a multilinestring(type = 'multilinestring' or type = 'route').
+•	multipolygons : "relation" features that form a multipolygon (type = 'multipolygon' or type = 'boundary'), and "way" features that are recognized as area.
+•	other_relations : "relation" features that do not belong to the above 2 layers.
+
+(3)	GEOJSON FILE:-
+GeoJSON is a format for encoding a variety of geographic data structures. A GeoJSON object may represent a geometry, a feature, or a collection of features. GeoJSON supports the following geometry types: Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon, and GeometryCollection. Features in GeoJSON contain a geometry object and additional properties, and a feature collection represents a list of features.
+A complete GeoJSON data structure is always an object (in JSON terms). In GeoJSON, an object consists of a collection of name/value pairs -- also called members. For each member, the name is always a string. Member values are either a string, number, object, array or one of the literals: true, false, and null. An array consists of elements where each element is a value as described above.
+(4)	GPX FILE:-
+GPX (the GPS Exchange Format) is a light-weight XML data format for the interchange of GPS data (waypoints, routes, and tracks) between applications and Web services on the Internet. Its tags store location, elevation, and time and can in this way be used to interchange data between GPS devices and software packages. Such computer programs allow users, for example, to view th
+eir tracks, project their tracks on satellite images or other maps, annotate maps, and tag photographs with the geolocation in the Exif metadata.
+(5)	KML FILE:-
+KML is a file format used to display geographic data in an Earth browser such as Google Earth, Google Maps, and Google Maps for mobile. KML uses a tag-based structure with nested elements and attributes and is based on the XML standard. All tags are case-sensitive and must appear exactly as they are listed in the KML Reference. The Reference indicates which tags are optional. Within a given element, tags must appear in the order shown in the Reference.
+(6)	NMEA FILE:-
+The National Marine Electronics Association (NMEA) has developed a specification that defines the interface between various pieces of marine electronic equipment. The standard permits marine electronics to send information to computers and to other marine equipment. A full copy of this standard is available for purchase at their web site. None of the information on this site comes from this standard and I do not have a copy. Anyone attempting to design anything to this standard should obtain an official copy.
+GPS receiver communication is defined within this specification. Most computer programs that provide real time position information understand and expect data to be in NMEA format. This data includes the complete PVT (position, velocity, time) solution computed by the GPS receiver. The idea of NMEA is to send a line of data called a sentence that is totally self contained and independent from other sentences. There are standard sentences for each device category and there is also the ability to define proprietary sentences for use by the individual company. All of the standard sentences have a two letter prefix that defines the device that uses that sentence type. (For gps receivers the prefix is GP.) which is followed by a three letter sequence that defines the sentence contents. In addition NMEA permits hardware manufactures to define their own proprietary sentences for whatever purpose they see fit. All proprietary sentences begin with the letter P and are followed with 3 letters that identifies the manufacturer controlling that sentence. For example a Garmin sentence would start with PGRM and Magellan would begin with PMGN.
+(7)	CSV FILE:-
+A CSV is a comma separated values file, which allows data to be saved in a table structured format. CSVs look like a garden-variety spreadsheet but with a .csv extension (Traditionally they take the form of a text file containing information separated by commas, hence the name). CSV files can be used with any spreadsheet program, such as Microsoft Excel, Open Office Calc, or Google Spreadsheets. They differ from other spreadsheet file types in that you can only have a single sheet in a file, they cannot save cell, column, or row styling, and cannot save forumlas.
+(8)	QGIS FILE:-
+QGIS is a popular open-source GIS with advanced capabilities. Here is a series of tutorials and tips that show you how to use it to tackle common GIS problems.
+(9)	GPSBABEL:-
+GPSBabel is a handy tool that can convert the various data formats to the desired GPX format. GPSBabel is a command line application run from a console window or command shell.
+
+
