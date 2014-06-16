@@ -1,4 +1,4 @@
-##Assignment 2##
+##Assignment 3##
 
 I have placed the below code to test the database connectivity from my cs2 server
 
